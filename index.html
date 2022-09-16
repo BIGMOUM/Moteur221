@@ -1,0 +1,25 @@
+public class ColoredQrcodeGenerator {
+
+    private static void writeImage(String outputFileName, String imageFormat, ByteMatrix matrix, final int size) {
+
+        // Java 2D Traitement de Area
+        ...
+
+        // Java 2D Traitement l'image
+        BufferedImage im = new BufferedImage(size, size, BufferedImage.TYPE_INT_RGB);
+        Graphics2D g = (Graphics2D) im.getGraphics();
+
+        // Modules verts
+        Color vert = new Color(0xAFC828);
+        g.setPaint(vert);
+
+        g.setBackground(new Color(0xFFFFFF));
+
+        // Fond blanc
+        g.clearRect(0, 0, size, size);
+
+        // Remplissage des modules
+        g.fill(a); 
+    }
+
+    ...
